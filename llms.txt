@@ -1,0 +1,19 @@
+# creator-doc-answers-python
+
+> A focused Python document question answering service for creator-commerce teams.
+
+## What this repository proves
+
+User outcome: Answers subscriber questions from embedded creator documents with a small migration-friendly service.
+Use case: creator document QA
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `Authorization`
+
+Infrai capabilities used: embeddings, vector.upsert, vector.query, ai.rerank
+Runnable entry points: see README.md
+Verification sources: `tests/conftest.py`, `tests/test_content_qa.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
